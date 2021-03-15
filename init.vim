@@ -32,6 +32,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
+Plug 'preservim/nerdtree'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
@@ -136,6 +137,10 @@ nmap <leader>tk :call GotoBuffer(1)<CR>
 nmap <leader>tl :call GotoBuffer(2)<CR>
 nmap <leader>t; :call GotoBuffer(3)<CR>
 
+
+
+" NerdTree ---------------------------------------------------------------------
+nnoremap <C-f> :NERDTreeToggle<CR>
 
 " OmniSharp --------------------------------------------------------------------
 autocmd FileType cs nmap <leader>hl <Plug>(omnisharp_highlight)
