@@ -25,7 +25,7 @@ vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " TODO: Move back 2 previous buffers (do this without plugin)
-noremap <leader>^ :Buffers<CR> <Up> <Enter> 
+noremap <leader>^ :Buffers<CR> <Up> <Enter>
 
 " Plugins ----------------------------------------------------------------------
 call plug#begin('~/.vim/plugged')
@@ -42,10 +42,10 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'puremourning/vimspector'
 Plug 'szw/vim-maximizer'
-Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'stsewd/fzf-checkout.vim'
 
 Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
@@ -110,6 +110,10 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+
+
+" Commenter --------------------------------------------------------------------
+let g:NERDSpaceDelims = 1
 
 
 " Fugitive ---------------------------------------------------------------------
