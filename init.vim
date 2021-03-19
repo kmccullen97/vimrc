@@ -119,6 +119,7 @@ let g:NERDSpaceDelims = 1
 " Fugitive ---------------------------------------------------------------------
 nmap <leader>gf :diffget //2<CR>
 nmap <leader>gj :diffget //3<CR>
+nmap <leader>gp :Git -c push.default=current push<CR>
 
 
 " Fzf --------------------------------------------------------------------------
